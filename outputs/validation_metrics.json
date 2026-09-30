@@ -1,0 +1,35 @@
+{
+  "held_out_cities": [
+    "Albuquerque",
+    "Amarillo",
+    "Austin",
+    "Dallas",
+    "Detroit",
+    "Kansas City",
+    "Lubbock",
+    "Providence"
+  ],
+  "unseen_city_test": {
+    "cities seen in training": {
+      "MAE": 43.93310806279813,
+      "RMSE": 62.04381005223813,
+      "MAPE": 0.01842509486481801,
+      "MdAPE": 0.015495511430858522,
+      "n": 1718
+    },
+    "cities NOT seen in training": {
+      "MAE": 46.468398233386054,
+      "RMSE": 65.28241804349915,
+      "MAPE": 0.019363779246776333,
+      "MdAPE": 0.016410127227074647,
+      "n": 1718
+    }
+  },
+  "label_outliers_flagged": 677,
+  "label_outlier_share": 0.014104166666666666,
+  "folds": [
+    "train<=M6 -> test M[7, 8]",
+    "train<=M7 -> test M[8, 9]",
+    "train<=M8 -> test M[9, 10]"
+  ]
+}

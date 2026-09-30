@@ -1,0 +1,17 @@
+config,scope,MAE,RMSE,MAPE,MdAPE
+baseline: median rpm x distance,all_rows,229.0439,665.5548,0.1029,0.0686
+baseline: median rpm x distance,clean_labels,178.0523,264.0387,0.0807,0.0674
+final (features as chosen),all_rows,98.8482,622.6142,0.0429,0.0167
+final (features as chosen),clean_labels,45.9565,67.617,0.0194,0.0164
+with market_index,all_rows,143.8574,636.8994,0.0609,0.0366
+with market_index,clean_labels,91.5539,122.1816,0.0385,0.0362
+with market_index (daily mean),all_rows,146.5381,637.4523,0.0619,0.038
+with market_index (daily mean),clean_labels,94.2956,125.5231,0.0395,0.0375
+with quote_signal,all_rows,114.8972,625.9675,0.0519,0.017
+with quote_signal,clean_labels,62.3774,99.8064,0.0289,0.0167
+without coordinates,all_rows,111.4954,624.6218,0.0502,0.0231
+without coordinates,clean_labels,58.7609,81.229,0.0269,0.0227
+without day-of-week,all_rows,101.4106,623.3556,0.0439,0.0175
+without day-of-week,clean_labels,48.5546,71.4557,0.0204,0.0172
+without haversine/ratio,all_rows,98.7819,622.5587,0.0428,0.0165
+without haversine/ratio,clean_labels,45.8926,67.5171,0.0194,0.0163

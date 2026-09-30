@@ -1,0 +1,37 @@
+Label outliers flagged: 677 (1.41%)
+fold train<=M6 done
+fold train<=M7 done
+fold train<=M8 done
+                         config        scope      MAE     RMSE   MAPE  MdAPE
+baseline: median rpm x distance     all_rows 229.0439 665.5548 0.1029 0.0686
+baseline: median rpm x distance clean_labels 178.0523 264.0387 0.0807 0.0674
+     final (features as chosen)     all_rows  98.8823 622.5820 0.0429 0.0167
+     final (features as chosen) clean_labels  45.9912  67.7034 0.0194 0.0164
+              with market_index     all_rows 143.8248 636.9076 0.0609 0.0365
+              with market_index clean_labels  91.5250 122.1950 0.0384 0.0361
+ with market_index (daily mean)     all_rows 146.3470 637.4096 0.0618 0.0378
+ with market_index (daily mean) clean_labels  94.1026 125.2482 0.0394 0.0374
+              with quote_signal     all_rows 114.8630 625.9245 0.0519 0.0170
+              with quote_signal clean_labels  62.3451  99.8759 0.0288 0.0167
+            without coordinates     all_rows 111.4115 624.6250 0.0502 0.0230
+            without coordinates clean_labels  58.6762  81.1615 0.0269 0.0226
+            without day-of-week     all_rows 101.4151 623.3772 0.0439 0.0175
+            without day-of-week clean_labels  48.5567  71.5414 0.0204 0.0172
+        without haversine/ratio     all_rows  98.8395 622.5984 0.0428 0.0166
+        without haversine/ratio clean_labels  45.9463  67.5369 0.0194 0.0163
+Unseen-city stress test (clean labels): {
+ "cities seen in training": {
+  "MAE": 44.008644938234085,
+  "RMSE": 62.20027243245338,
+  "MAPE": 0.018417152130736667,
+  "MdAPE": 0.01573080577491137,
+  "n": 1718
+ },
+ "cities NOT seen in training": {
+  "MAE": 46.697031197928645,
+  "RMSE": 65.54581260163813,
+  "MAPE": 0.019465081999887415,
+  "MdAPE": 0.016686155381615733,
+  "n": 1718
+ }
+}
